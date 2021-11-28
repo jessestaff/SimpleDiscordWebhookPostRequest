@@ -10,7 +10,8 @@ namespace test
         {
             var wb = new WebClient();
             var data = new NameValueCollection();
-            string url = "WebhookUrlHere.com";
+            Console.WriteLine("Enter Discord Webhook URL");
+            string url = Console.ReadLine();
 
             Console.WriteLine("Please Enter Your Name");
             data["username"] = Console.ReadLine();
